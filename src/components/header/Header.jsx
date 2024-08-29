@@ -1,7 +1,7 @@
-import { HeaderButtons } from "./buttons"
-import { SearchIcon } from "./SearchIcon"
-import { BurgerIcon } from "./svg/BurgerIcon"
-import { HeaderIcon } from "./svg/HeaderIcon"
+import { HeaderButtons } from "../buttons"
+import { SearchIcon } from "../svg/SearchIcon"
+import { BurgerIcon } from "../svg/BurgerIcon"
+import { HeaderIcon } from "../svg/HeaderIcon"
 
 export const Header = () => {
     return (
