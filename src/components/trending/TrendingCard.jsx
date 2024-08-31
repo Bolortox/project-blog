@@ -5,13 +5,16 @@ export const TrendingCard = ({ imgUrl, badge, title }) => {
         backgroundImage: `url(${imgUrl})`,
         width: "100%",
         height: "320px",
+        width: "289px",
         backgroundSize: "cover",
         backgroundPosition: "center",
         borderRadius: "6px",
       }}
-      className=" w-[289px] h-[320px] rounded-xl p-6 flex flex-col justify-end gap-3"
+      className="rounded-xl flex flex-col justify-end gap-3"
     >
-      <button className="bg-indigo-500 rounded-md ">{badge}</button>
+      <button className="bg-indigo-500 rounded-md w-[94px] h-[27px] text-sm font-sans text-white">
+        {badge}
+      </button>
       <p className="font-sans font-semibold text-white">{title}</p>
     </div>
   );

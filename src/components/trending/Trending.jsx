@@ -28,10 +28,9 @@ export const Trending = () => {
     },
   ];
   return (
-    <div className="w-full flex justify-center ">
+    <div className="w-full flex justify-center flex-col p-[100px]">
+      <p className="">Trending</p>
       <div className="container grid grid-cols-4 flex-col justify-center gap-4">
-        {/* <p className="">Trending</p> */}
-
         {trendingDatas.map((data) => {
           return (
             <TrendingCard
