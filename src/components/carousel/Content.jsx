@@ -33,7 +33,7 @@ export const Content = () => {
   };
 
   return (
-    <div className=" h-[800px] cover w-full m-auto py-16 p-4 relative pt-28 ">
+    <div className=" h-[800px] cover w-full m-auto py-16 relative pt-28 ">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className=" p-3 w-full h-full rounded-2xl bg-center bg-cover duration-500 "

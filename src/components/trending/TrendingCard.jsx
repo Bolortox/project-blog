@@ -10,7 +10,7 @@ export const TrendingCard = ({ imgUrl, badge, title }) => {
         backgroundPosition: "center",
         borderRadius: "6px",
       }}
-      className="rounded-xl flex flex-col justify-end gap-3"
+      className="rounded-xl flex flex-col justify-end gap-4 p-7"
     >
       <button className="bg-indigo-500 rounded-md w-[94px] h-[27px] text-sm font-sans text-white">
         {badge}

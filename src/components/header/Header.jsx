@@ -6,7 +6,7 @@ import { HeaderIcon } from "../svg/HeaderIcon";
 export const Header = () => {
   return (
     <div className="flex w-full h-auto justify-center ">
-      <div className="container flex justify-between max-w-[1200px] fixed z-[1] py-[32px]">
+      <div className="container flex justify-between max-w-[1216px] fixed z-[1] py-[32px] bg-white">
         <div className="">
           <HeaderIcon />
         </div>
