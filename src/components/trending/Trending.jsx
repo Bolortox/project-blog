@@ -3,25 +3,25 @@ import { TrendingCard } from "./TrendingCard";
 export const Trending = () => {
   const trendingDatas = [
     {
-      imgUrl: "./Images/blackwomans.jpg",
+      imgUrl: "./fuji.jpeg",
       badge: "Technology",
       title:
         "The Impact of Technology on the Workplace: How Technology is Changing",
     },
     {
-      imgUrl: "./Images/blackwomanlittle.jpg",
+      imgUrl: "./maldives.jpeg",
       badge: "Technology",
       title:
         "The Impact of Technology on the Workplace: How Technology is Changing",
     },
     {
-      imgUrl: "./Images/blackwomans.jpg",
+      imgUrl: "./amralt.webp",
       badge: "Technology",
       title:
         "The Impact of Technology on the Workplace: How Technology is Changing",
     },
     {
-      imgUrl: "./Images/blackwomans.jpg",
+      imgUrl: "./france.webp",
       badge: "Technology",
       title:
         "The Impact of Technology on the Workplace: How Technology is Changing",

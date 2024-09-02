@@ -1,3 +1,14 @@
 export const BlogPost = () => {
-  return <div>fergrw</div>;
-};
+const blogpostDatas = [
+  {
+    url:" "
+    
+  }
+]
+  
+  return (
+    <div> 
+
+    </div>
+  )
+}

@@ -1,5 +1,6 @@
 import { BlogPost } from "../blog-post/BlogPost";
 import { Content } from "../carousel/Content";
+import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
 import { Trending } from "../trending/Trending";
 
@@ -11,6 +12,9 @@ export default function HomePage() {
         <Content />
         <Trending />
         <BlogPost />
+        <div className="bg-slate-100">
+          <Footer />
+        </div>
       </div>
     </div>
   );
