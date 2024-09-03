@@ -17,7 +17,7 @@ export const Footer = () => {
               enim ad minim veniam
             </p>
           </div>
-          <div>
+          <div className="text-slate-800">
             <p>Email : info@jstemplate.net</p>
             <p>Phone : 880 123 456 789</p>
           </div>
@@ -39,9 +39,11 @@ export const Footer = () => {
       {/* top half done  */}
       <div className="flex gap-[609px] py-8">
         <FooterIcon />
-        <div className="flex text-slate-600 gap-8">
+        <div className="flex text-slate-600 gap-4">
           <p>Terms of Use</p>
+          <p className="text-slate-100">|</p>
           <p>Privacy Policy</p>
+          <p className="text-slate-100">|</p>
           <p>Cookie Policy</p>
         </div>
       </div>

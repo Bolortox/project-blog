@@ -12,7 +12,7 @@ export default function HomePage() {
         <Content />
         <Trending />
         <BlogPost />
-        <div className="bg-slate-100">
+        <div className="bg-slate-50">
           <Footer />
         </div>
       </div>

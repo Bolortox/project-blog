@@ -1,5 +1,10 @@
-import ErrorPage from "@/components/pages/404";
+export default function ErrorPage() {
+  return (
+    <div>
+      <h1>Not found - 404!</h1>
+      <div>
 
-export default function Error() {
-  return <ErrorPage />;
+      </div>
+    </div>
+  );
 }

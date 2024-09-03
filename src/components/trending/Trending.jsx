@@ -32,7 +32,7 @@ export const Trending = () => {
       <p className="text-slate-800 text-2xl font-bold non-italic font-sans">
         Trending
       </p>
-      <div className="container  grid grid-cols-4 flex-col justify-center gap-4 pt-[30px]">
+      <div className="container grid grid-cols-4 flex-col justify-center gap-4 pt-[30px]">
         {trendingDatas.map((data) => {
           return (
             <TrendingCard
