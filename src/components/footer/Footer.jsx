@@ -6,7 +6,7 @@ import { TwitterIcon } from "../svg/TwitterIcon";
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col w-full h-auto justify-center pt-[64px] bg-slate-50  ">
+    <div className="flex flex-col w-full h-auto items-center justify-center pt-[64px] bg-slate-50  ">
       <div className="flex justify-between">
         <div className="flex flex-col gap-6 w-[30%]">
           <div className="flex flex-col gap-3">
