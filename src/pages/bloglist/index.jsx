@@ -1,5 +1,9 @@
 import BlogListing from "@/components/pages/BlogListing";
 
 export default function BlogList() {
-  return <BlogListing />;
+  return (
+    <div>
+      <BlogListing />
+    </div>
+  );
 }

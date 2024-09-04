@@ -2,7 +2,7 @@ import { HeaderButtons } from "../buttons";
 import { SearchIcon } from "../svg/SearchIcon";
 import { BurgerIcon } from "../svg/BurgerIcon";
 import { HeaderIcon } from "../svg/HeaderIcon";
-
+import Link from "next/link";
 export const Header = () => {
   return (
     <div className="flex w-full h-auto justify-center ">
@@ -11,9 +11,16 @@ export const Header = () => {
           <HeaderIcon />
         </div>
         <div className="hidden md:flex md:items-center gap-10 text-slate-600">
-          <HeaderButtons text={"Home "} />
-          <HeaderButtons text={"Blog "} />
-          <HeaderButtons text={"Contact "} />
+          <Link href="/">
+            <HeaderButtons text={"Home "} />
+          </Link>
+
+          <Link href="/bloglist">
+            <HeaderButtons text={"Blog "} />
+          </Link>
+          <Link href="/contactus">
+            <HeaderButtons text={"Contact "} />
+          </Link>
         </div>
         <div className="hidden md:flex ">
           <input

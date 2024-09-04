@@ -1,4 +1,11 @@
-export const BlogPostCard = ({ dates, tags, paragraph, imgUrl }) => {
+export const SecondCard = ({
+  dates,
+  tags,
+  paragraph,
+  imgUrl,
+  profile,
+  username,
+}) => {
   return (
     <div className="w-[392px] h-[476px] rounded-xl border p-4 gap-5 flex flex-col  ">
       <div
@@ -27,7 +34,24 @@ export const BlogPostCard = ({ dates, tags, paragraph, imgUrl }) => {
           {paragraph}
         </p>
       </div>
-      <p className="text-base text-slate-400">{dates}</p>
+      <div className="flex items-center gap-[20px]">
+        <div className="flex gap-3 items-center ">
+          <div
+            style={{
+              backgroundImage: `url(${profile})`,
+              width: "36px",
+              height: "36px",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              borderRadius: "50px",
+            }}
+          ></div>
+          <div className="font-sans not-italic text-slate-400 font-medium">
+            <p>{username}</p>
+          </div>
+        </div>
+        <p className="text-base text-slate-400">{dates}</p>
+      </div>
     </div>
   );
 };
