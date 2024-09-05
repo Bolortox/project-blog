@@ -1,3 +1,4 @@
+
 export const TrendingCard = ({ imgUrl, badge, title }) => {
   return (
     <div
