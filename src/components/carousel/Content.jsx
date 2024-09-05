@@ -24,9 +24,9 @@ export const Content = ({ slides = [] }) => {
         className=" p-3 w-full h-full rounded-2xl bg-center bg-cover duration-500 "
       >
         <div className=" w-[598px] h-[286px] absolute bottom-20  p-10 bg-white rounded-xl flex flex-col gap-6">
-          <div className="w-[97px] h-[28px] bg-indigo-500 text-white flex justify-center items-center rounded-md text-xs  non-italicfont-medium  ">
+          <button className="w-[97px] h-[28px] bg-indigo-500 text-white flex justify-center items-center rounded-md text-xs  non-italicfont-medium hover:shadow-2xl ">
             Technology
-          </div>
+          </button>
           <div className="text-4xl font-semibold font-sans">
             Grid system for better Design User Interface
           </div>

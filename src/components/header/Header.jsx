@@ -22,10 +22,10 @@ export const Header = () => {
             <HeaderButtons text={"Contact "} />
           </Link>
         </div>
-        <div className="hidden md:flex ">
+        <div className="hidden md:flex rounded-[5px] px-2 bg-slate-100 ">
           <input
             type="search"
-            className=" w-[166px] h-[36px] bg-slate-100 rounded-[5px] flex justify-center items-center gap-"
+            className=" bg-slate-100  flex justify-center items-center "
             placeholder="Search"
           />
           <button>
