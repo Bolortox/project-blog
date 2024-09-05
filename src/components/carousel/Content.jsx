@@ -2,22 +2,7 @@ import { LeftIcon } from "../svg/LeftIcon";
 import { RightIcon } from "../svg/RightIcon";
 import React, { useState } from "react";
 
-export const Content = () => {
-  const slides = [
-    {
-      url: "https://images.unsplash.com/photo-1624062999490-6218fc60e4f3?q=80&w=4470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1612899326681-66508905b4ce?q=80&w=4471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1658826592869-936796aac758?q=80&w=3840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      url: "https://images.unsplash.com/photo-1724782012605-bfad00f948bd?q=80&w=4470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-  ];
-
+export const Content = ({ slides = [] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -35,7 +20,7 @@ export const Content = () => {
   return (
     <div className=" h-[800px] cover w-full m-auto py-16 relative pt-28 ">
       <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+        style={{ backgroundImage: `url(${slides[currentIndex]?.cover_image})` }}
         className=" p-3 w-full h-full rounded-2xl bg-center bg-cover duration-500 "
       >
         <div className=" w-[598px] h-[286px] absolute bottom-20  p-10 bg-white rounded-xl flex flex-col gap-6">

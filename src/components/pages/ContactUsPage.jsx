@@ -59,12 +59,12 @@ export default function ContactUsPage() {
                 className=" w-full h-9 bg-white rounded-[5px] flex justify-center items-center border border-slate-200 pl-2"
                 placeholder="Subject"
               />
-              <input
+              <textarea
                 type="text"
                 className="  w-full h-[130px] bg-white rounded-[5px] flex justify-center items-center border border-slate-200 pl-2"
                 placeholder="Write a message"
               />
-              <button className="bg-blue-500 text-white h-">
+              <button className="bg-blue-500 text-white h-[40px] w-[130px] rounded-md text-sm">
                 Send a message{" "}
               </button>
             </div>
