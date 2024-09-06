@@ -1,4 +1,3 @@
-import FormatDate from "../Utils/FormatDate";
 import { BlogPostCard } from "./BlogPostCard";
 import Link from "next/link";
 import React, { useState } from "react";
