@@ -40,11 +40,6 @@ export const BlogPost = ({ articles = [], filterTag }) => {
           </Link>
         ))}
       </div>
-      <div className="flex justify-center items-center py-5">
-        <button className="w-[123px] h-[48px] border border-slate-300 rounded-md">
-          Load More
-        </button>
-      </div>
     </div>
   );
 };

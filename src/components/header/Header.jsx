@@ -15,10 +15,10 @@ export const Header = () => {
             <HeaderButtons text={"Home "} />
           </Link>
 
-          <Link href="/bloglist">
+          <Link href="/blog-list">
             <HeaderButtons text={"Blog "} />
           </Link>
-          <Link href="/contactus">
+          <Link href="/contact-us">
             <HeaderButtons text={"Contact "} />
           </Link>
         </div>
