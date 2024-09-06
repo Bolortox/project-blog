@@ -1,4 +1,4 @@
-import { Second } from "../bloglisting/Second";
+import { Second } from "../blog-listing/Second";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
 import { useEffect, useState } from "react";
