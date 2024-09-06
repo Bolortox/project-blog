@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { BlogPost } from "../blog-post/BlogPost";
-import { Content } from "../carousel/Content";
+import { Carousel, Content } from "../carousel/Carousel";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
 import { Trending } from "../trending/Trending";
@@ -8,6 +8,7 @@ import { Trending } from "../trending/Trending";
 export default function HomePage() {
   const [articles, setArticles] = useState([]);
   const [trendingData, setTrendingData] = useState([]);
+
   const [tag, setTag] = useState();
 
   const fetchData = () => {
@@ -38,7 +39,7 @@ export default function HomePage() {
     <div className="w-full h-full m-auto">
       <div className="container flex flex-col max-w-[1216px] w-auto h-auto m-auto ">
         <Header />
-        <Content slides={articles.slice(20, 30)} articles={articles} />
+        <Carousel slides={articles} />
         <Trending trendingData={trendingData} />
         <BlogPost filterTag={filterTag} articles={articles} />
         <div className="bg-slate-50">

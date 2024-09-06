@@ -1,4 +1,4 @@
-import ContactUs from "@/pages/contactus";
+import ContactUs from "@/pages/contact-us";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
 

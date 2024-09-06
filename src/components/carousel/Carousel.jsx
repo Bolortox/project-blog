@@ -2,7 +2,7 @@ import { LeftIcon } from "../svg/LeftIcon";
 import { RightIcon } from "../svg/RightIcon";
 import React, { useState } from "react";
 
-export const Content = ({ slides = [] }) => {
+export const Carousel = ({ slides = [] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
