@@ -8,16 +8,17 @@ import { Trending } from "../trending/Trending";
 export default function HomePage() {
   const [articles, setArticles] = useState([]);
   const [trendingData, setTrendingData] = useState([]);
+  const [tag, setTag] = useState();
 
   const fetchData = () => {
-    fetch("https://dev.to/api/articles")
+    fetch(`https://dev.to/api/articles?tag=${tag}`)
       .then((response) => response.json())
       .then((data) => setArticles(data));
   };
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [tag]);
 
   const fetchTrendingData = () => {
     fetch(`https://dev.to/api/articles?per_page=4&top=4`)
@@ -25,6 +26,9 @@ export default function HomePage() {
       .then((data) => {
         setTrendingData(data);
       });
+  };
+  const filterTag = (newtag) => {
+    setTag(newtag);
   };
 
   useEffect(() => {
@@ -34,9 +38,9 @@ export default function HomePage() {
     <div className="w-full h-full m-auto">
       <div className="container flex flex-col max-w-[1216px] w-auto h-auto m-auto ">
         <Header />
-        <Content slides={articles.slice(20, 30)} />
+        <Content slides={articles.slice(20, 30)} articles={articles} />
         <Trending trendingData={trendingData} />
-        <BlogPost articles={articles} />
+        <BlogPost filterTag={filterTag} articles={articles} />
         <div className="bg-slate-50">
           <Footer />
         </div>

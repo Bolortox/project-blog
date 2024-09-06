@@ -3,32 +3,28 @@ import { BlogPostCard } from "./BlogPostCard";
 import Link from "next/link";
 import React, { useState } from "react";
 
-export const BlogPost = ({ articles = [] }) => {
-  // const [selectedFilters, setSelectedFilters] = useState([]);
-  // const [filteredItems, setFilteredItems] = useState(items);
-  // let filters = ["Design", "Travel", "Fashion", "Technology", "Branding"];
-
+export const BlogPost = ({ articles = [], filterTag }) => {
   return (
     <div className="w-full flex justify-center flex-col pt-[100px]">
       <p className="text-slate-800 text-2xl font-bold non-italic font-sans">
         All Blog Posts
       </p>
-      <div className="flex justify-between pt-8 font-sans not-italic font-bold text-slate-700">
-        {/* <div className="flex gap-5 buttons-container">
-          {filters.map((category, idx) => (
-            <button
-              onClick={() => handleFilterButtonClick(category)}
-              className={"text-orange-200"`button ${
-                selectedFilters?.includes(category) ? "active" : ""
-              }`}
-              key={`filters-${idx}`}
-            >
-              {category}
-            </button>
-          ))}
-        </div> */}
-
-        <button>View all</button>
+      <div className="flex justify-between ">
+        <div className="flex justify-between gap-5 pt-8 font-sans not-italic font-bold text-slate-700">
+          <button className="text-orange-300" onClick={() => filterTag("")}>
+            All
+          </button>
+          <button onClick={() => filterTag("database")}>Database</button>
+          <button onClick={() => filterTag("javascipt")}>Javascript</button>
+          <button onClick={() => filterTag("meta")}>Meta</button>
+          <button onClick={() => filterTag("ruby")}>Ruby</button>
+        </div>
+        <button
+          className="font-sans not-italic font-bold text-slate-700"
+          onClick={() => filterTag("")}
+        >
+          View All
+        </button>
       </div>
       {/* end of button  */}
       <div className="container grid grid-cols-3 flex-col justify-center gap-4 pt-[30px]">

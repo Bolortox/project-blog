@@ -64,13 +64,9 @@ export default function ContactUsPage() {
                 className="  w-full h-[130px] bg-white rounded-[5px] flex justify-center items-center border border-slate-200 pl-2"
                 placeholder="Write a message"
               />
-<<<<<<< HEAD
-              <button className="bg-indigo-500 rounded-md border-0 text-white h-[40px] w-[130px]">
-                Send a message
-=======
+
               <button className="bg-blue-500 text-white h-[40px] w-[130px] rounded-md text-sm">
-                Send a message{" "}
->>>>>>> f329304c283f560efdf78fc29b40c83d2604813c
+                Send a message
               </button>
             </div>
           </div>
