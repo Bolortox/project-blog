@@ -13,14 +13,15 @@ export const Header = () => {
           </Link>
         </div>
         <div className="hidden md:flex md:items-center gap-10 text-slate-600 ">
-          <Link href="/">
+          <Link href="/" className="hover:text-blue-500">
             <HeaderButtons text={"Home "} />
           </Link>
 
-          <Link href="/blog-list">
+          <Link href="/blog-list" className="hover:text-blue-500">
             <HeaderButtons text={"Blog "} />
           </Link>
-          <Link href="/contact-us">
+
+          <Link href="/contact-us" className="hover:text-blue-500">
             <HeaderButtons text={"Contact "} />
           </Link>
         </div>

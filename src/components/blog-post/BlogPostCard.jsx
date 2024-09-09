@@ -23,7 +23,7 @@ export const BlogPostCard = ({ dates, tags, paragraph, imgUrl }) => {
           {paragraph}
         </p>
       </div>
-      <p className="text-base text-slate-200">{dates}</p>
+      <p className="text-base text-slate-300">{dates}</p>
     </div>
   );
 };
