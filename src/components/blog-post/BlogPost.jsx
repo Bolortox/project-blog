@@ -28,14 +28,13 @@ export const BlogPost = ({ articles = [], filterTag }) => {
       {/* end of button  */}
       <div className="container grid grid-cols-3 flex-col justify-center gap-4 pt-[30px]">
         {articles.map((article, index) => (
-          <Link href={`/blog/${article?.id}`} key={article?.id}>
+          <Link href={`/blog-list/${article?.id}`} key={article?.id}>
             <BlogPostCard
               key={index}
               imgUrl={article?.cover_image}
               tags={article?.tag_list}
               paragraph={article?.title}
               dates={article?.published_at}
-              // dates={formattedDate}
             />
           </Link>
         ))}

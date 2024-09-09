@@ -17,8 +17,6 @@ const SinglePost = () => {
     fetchData();
   }, []);
 
-  console.log(router.query.id);
-
   return (
     <div>
       <Header />

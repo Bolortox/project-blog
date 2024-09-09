@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FacebookIcon } from "../svg/FacebookIcon";
 import { FooterIcon } from "../svg/FooterIcon";
 import { InstaIcon } from "../svg/InstaIcon";
@@ -10,7 +11,7 @@ export const Footer = () => {
       <div className="flex justify-between">
         <div className="flex flex-col gap-6 w-[30%]">
           <div className="flex flex-col gap-3">
-            <p className="text-lg font-sans font-semibold ">About</p>
+            <p className="text-lg  font-semibold ">About</p>
             <p className=" text-slate-500 font-normal font-sans non-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -24,16 +25,30 @@ export const Footer = () => {
         </div>
         {/* first section ended */}
         <div className="text-base flex flex-col gap-2">
-          <p>Home</p>
-          <p>Blog</p>
-          <p>Contact</p>
+          <Link href="/">
+            <button>Home</button>
+          </Link>
+          <Link href="/blog-list">
+            <button>Blog</button>
+          </Link>
+          <Link href="/contact-us">
+            <button>Contact</button>
+          </Link>
         </div>
         {/* second half ended  */}
         <div className="flex gap-7 w-[30%]">
-          <FacebookIcon />
-          <TwitterIcon />
-          <InstaIcon />
-          <LastIcon />
+          <a href="https://www.facebook.com/">
+            <FacebookIcon />
+          </a>
+          <a href="https://x.com/">
+            <TwitterIcon />
+          </a>
+          <a href="https://www.instagram.com/">
+            <InstaIcon />
+          </a>
+          <a href="https://www.linkedin.com/">
+            <LastIcon />
+          </a>
         </div>
       </div>
       {/* top half done  */}

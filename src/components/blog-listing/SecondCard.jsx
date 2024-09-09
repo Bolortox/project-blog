@@ -1,3 +1,4 @@
+// Blog Page Card
 export const SecondCard = ({
   dates,
   tags,
@@ -21,13 +22,9 @@ export const SecondCard = ({
       ></div>
       <div className="flex flex-col gap-4">
         <div className="flex gap-2">
-          {tags.map((tag) => {
-            return (
-              <button className="w-[97px] h-[28px] flex justify-center items-center rounded-md bg-indigo-100 text-sm text-blue-600 font-sans not-italic">
-                {tag}
-              </button>
-            );
-          })}
+          <button className="w-[97px] h-[28px] flex justify-center items-center rounded-md bg-indigo-100 text-sm text-blue-600 font-sans not-italic">
+            {tags[0]}
+          </button>
         </div>
 
         <p className="text-2xl font-sans not-italic font-semibold">

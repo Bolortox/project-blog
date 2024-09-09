@@ -1,6 +1,6 @@
 export const BlogPostCard = ({ dates, tags, paragraph, imgUrl }) => {
   return (
-    <div className="w-[392px] h-[476px] rounded-xl border p-4 gap-5 flex flex-col  ">
+    <div className="w-[392px] h-[476px] rounded-xl border p-4 gap-5 flex flex-col ">
       <div
         className=""
         style={{
@@ -23,7 +23,7 @@ export const BlogPostCard = ({ dates, tags, paragraph, imgUrl }) => {
           {paragraph}
         </p>
       </div>
-      <p className="text-base text-slate-400">{dates}</p>
+      <p className="text-base text-slate-200">{dates}</p>
     </div>
   );
 };
