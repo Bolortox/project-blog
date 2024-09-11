@@ -33,7 +33,6 @@ export default function BlogListing() {
   return (
     <div className="w-full h-full m-auto">
       <div className="container flex flex-col max-w-[1216px] w-auto h-auto m-auto ">
-        <Header />
         <Second articles={articles} />
         {/* Second is the name of blog pages.  */}
         <div className="flex justify-center items-center py-5">
@@ -44,8 +43,6 @@ export default function BlogListing() {
             Load More
           </button>
         </div>
-
-        <Footer />
       </div>
     </div>
   );

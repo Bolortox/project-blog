@@ -5,21 +5,21 @@ import { useEffect, useState } from "react";
 
 const SinglePost = () => {
   const router = useRouter();
+  const id = router.query.id;
   const [article, setArticle] = useState({});
 
   const fetchData = () => {
-    fetch(`https://dev.to/api/articles/${router.query.id}`)
+    fetch(`https://dev.to/api/articles/${id}`)
       .then((response) => response.json())
       .then((data) => setArticle(data));
   };
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [id]);
 
   return (
     <div>
-      <Header />
       <div className="pt-[100px] w-full h-full m-auto container max-w-[800px] flex flex-col gap-8 ">
         <div className=" flex flex-col gap-5">
           <h1 className="text-4xl font-semibold"> {article?.title} </h1>
@@ -73,7 +73,6 @@ const SinglePost = () => {
           showing respect.
         </p>
       </div>
-      <Footer />
     </div>
   );
 };

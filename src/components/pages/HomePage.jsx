@@ -40,12 +40,12 @@ export default function HomePage() {
   }, [tag]);
 
   useEffect(() => {
-    fetchTrendingData();
-  }, []);
-
-  useEffect(() => {
     fetchButtonData();
   }, [contentNumber]);
+
+  useEffect(() => {
+    fetchTrendingData();
+  }, []);
 
   const handleClickLoadMore = () => {
     setContentNumber(contentNumber + 3);
@@ -54,7 +54,6 @@ export default function HomePage() {
   return (
     <div className="w-full h-full m-auto">
       <div className="container flex flex-col max-w-[1216px] w-auto h-auto m-auto ">
-        <Header />
         <Carousel />
         <Trending trendingData={trendingData} />
         <BlogPost filterTag={filterTag} articles={articles} />
@@ -66,9 +65,7 @@ export default function HomePage() {
             Load More
           </button>
         </div>
-        <div className="bg-slate-50">
-          <Footer />
-        </div>
+        <div className="bg-slate-50"></div>
       </div>
     </div>
   );

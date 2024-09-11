@@ -5,7 +5,6 @@ import { Header } from "../header/Header";
 export default function ContactUsPage() {
   return (
     <main className="">
-      <Header />
       <div className="w-full h-full m-auto flex items-center">
         <div className="container flex flex-col max-w-[643px] w-auto h-auto m-auto pt-[100px]">
           <div className="flex flex-col items-center gap-5">
@@ -72,7 +71,6 @@ export default function ContactUsPage() {
           </div>
         </div>
       </div>
-      <Footer />
     </main>
   );
 }
