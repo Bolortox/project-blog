@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { BlogPost } from "../blog-post/BlogPost";
 import { Carousel, Content } from "../carousel/Carousel";
-import { Footer } from "../footer/Footer";
-import { Header } from "../header/Header";
+
 import { Trending } from "../trending/Trending";
 
 export default function HomePage() {

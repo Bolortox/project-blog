@@ -5,21 +5,44 @@ import React, { useState } from "react";
 export const BlogPost = ({ articles = [], filterTag }) => {
   return (
     <div className="w-full flex justify-center flex-col pt-[100px]">
-      <p className="text-slate-800 text-2xl font-bold non-italic font-sans">
+      <p className="text-slate-800 text-2xl font-bold non-italic font-sans ">
         All Blog Posts
       </p>
       <div className="flex justify-between ">
         <div className="flex justify-between gap-5 pt-8 font-sans not-italic font-bold text-slate-700">
-          <button className="text-orange-300" onClick={() => filterTag("")}>
+          <button
+            className="text-orange-300 hover:text-slate-800"
+            onClick={() => filterTag("")}
+          >
             All
           </button>
-          <button onClick={() => filterTag("database")}>Database</button>
-          <button onClick={() => filterTag("javascipt")}>Javascript</button>
-          <button onClick={() => filterTag("meta")}>Meta</button>
-          <button onClick={() => filterTag("ruby")}>Ruby</button>
+          <button
+            className="hover:text-orange-300"
+            onClick={() => filterTag("database")}
+          >
+            Database
+          </button>
+          <button
+            className="hover:text-orange-300"
+            onClick={() => filterTag("javascipt")}
+          >
+            Javascript
+          </button>
+          <button
+            className="hover:text-orange-300"
+            onClick={() => filterTag("meta")}
+          >
+            Meta
+          </button>
+          <button
+            className="hover:text-orange-300"
+            onClick={() => filterTag("ruby")}
+          >
+            Ruby
+          </button>
         </div>
         <button
-          className="font-sans not-italic font-bold text-slate-700"
+          className="font-sans not-italic font-bold text-slate-700 hover:text-orange-300"
           onClick={() => filterTag("")}
         >
           View All
