@@ -1,5 +1,3 @@
-import { Footer } from "@/components/footer/Footer";
-import { Header } from "@/components/header/Header";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -27,7 +25,7 @@ const SinglePost = () => {
             <div className="flex gap-2">
               <div
                 style={{
-                  backgroundImage: `url(${article.user?.profile_image})`,
+                  backgroundImage: `url(${article?.user?.profile_image} )`,
                   width: "28px",
                   height: "28px",
                   backgroundSize: "cover",
@@ -48,7 +46,7 @@ const SinglePost = () => {
 
         <div
           style={{
-            backgroundImage: `url(${article?.cover_image})`,
+            backgroundImage: `url(${article?.social_image})`,
             width: "800px",
             height: "462px",
             backgroundSize: "cover",

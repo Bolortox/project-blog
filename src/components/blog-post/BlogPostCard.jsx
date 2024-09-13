@@ -4,7 +4,7 @@ export const BlogPostCard = ({ dates, tags, paragraph, imgUrl }) => {
       <div
         className=""
         style={{
-          backgroundImage: `url(${imgUrl})`,
+          backgroundImage: `url(${imgUrl || "noImage.jpg"})`,
           width: "100%",
           height: "240px",
           backgroundSize: "cover",

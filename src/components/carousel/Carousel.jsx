@@ -32,7 +32,7 @@ export const Carousel = ({ slides = [] }) => {
   };
 
   return (
-    <div className=" h-[800px] cover w-full m-auto py-16 relative pt-28 ">
+    <div className=" h-[800px] cover w-full m-auto py-16 relative pt-28 px-4">
       <Link href={`/blog-list/${carouselData[currentIndex]?.id}`}>
         <div
           style={{

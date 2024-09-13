@@ -1,6 +1,6 @@
 export const TrendingCard = ({ imgUrl, badge, title }) => {
   return (
-    <div className="hover:scale-[1.1]">
+    <div className="">
       <div
         style={{
           backgroundImage: `url(${imgUrl})`,
