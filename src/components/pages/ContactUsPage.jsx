@@ -1,12 +1,8 @@
-import ContactUs from "@/pages/contact-us";
-import { Footer } from "../footer/Footer";
-import { Header } from "../header/Header";
-
 export default function ContactUsPage() {
   return (
-    <main className="">
+    <main className="py-10 rounded">
       <div className="w-full h-full m-auto flex items-center">
-        <div className="container flex flex-col max-w-[643px] w-auto h-auto m-auto pt-[100px]">
+        <div className="container flex flex-col max-w-[643px] w-auto h-auto m-auto pt-[100px] ">
           <div className="flex flex-col items-center gap-5">
             <div className="flex flex-col gap-5">
               <p className="text-slate-800 text-2xl font-bold non-italic font-sans">
@@ -37,7 +33,7 @@ export default function ContactUsPage() {
               </div>
             </div>
 
-            <div className="bg-slate-100 w-full h-full p-4 flex flex-col gap-4">
+            <div className="bg-slate-100 w-full h-full p-4 flex flex-col gap-4 rounded-xl">
               <p className="font-sans not-italic text-base font-semibold">
                 Leave a Message
               </p>
