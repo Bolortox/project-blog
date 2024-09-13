@@ -1,12 +1,8 @@
-import { Footer } from "@/components/footer/Footer";
-import { Header } from "@/components/header/Header";
 import Link from "next/link";
 
 export default function ErrorPage() {
   return (
-    <div className=" w-full h-full m-auto container max-w-2xl flex flex-col justify-center items-center ">
-      <Header />
-
+    <div className=" w-full h-full m-auto container max-w-2xl flex flex-col justify-center items-center py-40 ">
       <div className="pt-[100px] flex gap-10">
         <p className="font-sans not-italic  text-7xl pr-10 border-r border-slate-400 h-[156px]">
           404
@@ -28,9 +24,7 @@ export default function ErrorPage() {
         </div>
       </div>
 
-      <div className="">
-        <Footer />
-      </div>
+      <div className=""></div>
     </div>
   );
 }

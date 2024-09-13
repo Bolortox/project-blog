@@ -26,13 +26,13 @@ export const Footer = () => {
         {/* first section ended */}
         <div className="text-base flex flex-col gap-2">
           <Link href="/">
-            <button>Home</button>
+            <button className="hover:text-blue-500">Home</button>
           </Link>
           <Link href="/blog-list">
-            <button>Blog</button>
+            <button className="hover:text-blue-500">Blog</button>
           </Link>
           <Link href="/contact-us">
-            <button>Contact</button>
+            <button className="hover:text-blue-500">Contact</button>
           </Link>
         </div>
         {/* second half ended  */}
@@ -53,7 +53,9 @@ export const Footer = () => {
       </div>
       {/* top half done  */}
       <div className="flex gap-[609px] py-8">
-        <FooterIcon />
+        <Link href="/">
+          <FooterIcon />
+        </Link>
         <div className="flex text-slate-600 gap-4">
           <p>Terms of Use</p>
           <p className="text-slate-100">|</p>
